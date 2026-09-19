@@ -71,7 +71,7 @@ function ActionLink({ href, children, secondary = false }: { href: string; child
 
 function Logo() {
   return <a href="#top" className="flex shrink-0 items-center gap-3" aria-label="Skydiver Academy home">
-    <span className="energy-glow relative grid h-9 w-9 place-items-center border border-energy"><span className="h-3 w-3 rotate-45 border border-primary" /></span>
+    <img src={logoAsset.url} alt="Skydiver Academy logo" width={36} height={36} className="energy-glow h-9 w-9 rounded-[6px] object-cover" />
     <span className="font-display text-lg font-bold uppercase leading-none">Skydiver<span className="block text-[10px] text-primary">Academy</span></span>
   </a>;
 }
