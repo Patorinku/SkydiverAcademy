@@ -62,14 +62,14 @@ function SectionHeading({ kicker, title, copy }: { kicker: string; title: string
 }
 
 function ActionLink({ href, children, secondary = false }: { href: string; children: ReactNode; secondary?: boolean }) {
-  return <a href={href} className={`group inline-flex min-h-12 items-center justify-center gap-3 border px-6 py-3 text-xs font-extrabold uppercase transition duration-300 ${secondary ? "border-border bg-background/20 text-foreground hover:border-primary hover:text-primary" : "border-primary bg-primary text-primary-foreground hover:bg-accent"}`}>
+  return <a href={href} className={`group inline-flex min-h-12 items-center justify-center gap-3 border px-6 py-3 text-xs font-extrabold uppercase transition duration-300 ${secondary ? "border-border bg-background/20 text-foreground hover:border-energy hover:text-energy" : "energy-glow border-primary bg-primary text-primary-foreground hover:border-accent hover:bg-accent hover:text-accent-foreground"}`}>
     {children}<ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
   </a>;
 }
 
 function Logo() {
   return <a href="#top" className="flex shrink-0 items-center gap-3" aria-label="Skydiver Academy home">
-    <span className="relative grid h-9 w-9 place-items-center border border-primary"><span className="h-3 w-3 rotate-45 border border-primary" /></span>
+    <span className="energy-glow relative grid h-9 w-9 place-items-center border border-energy"><span className="h-3 w-3 rotate-45 border border-primary" /></span>
     <span className="font-display text-lg font-bold uppercase leading-none">Skydiver<span className="block text-[10px] text-primary">Academy</span></span>
   </a>;
 }
@@ -92,13 +92,13 @@ function Header() {
 
 function Hero() {
   return <section id="top" className="relative flex min-h-[920px] items-end overflow-hidden bg-ink md:min-h-[900px]">
-    <img src={heroArt} alt="Futuristic African game character overlooking a cinematic digital world" width={1920} height={1280} className="hero-art absolute inset-0 h-full w-full object-cover object-[62%_center]" />
+    <img src={heroArt} alt="Futuristic African game character overlooking a cinematic digital world" width={1920} height={1280} className="hero-art vibranium-grade absolute inset-0 h-full w-full object-cover object-[62%_center]" />
     <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/10" />
     <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40" />
-    <div className="scan-line absolute inset-x-0 top-0 z-10 h-px bg-primary/50" />
+    <div className="scan-line absolute inset-x-0 top-0 z-10 h-px bg-energy/70" />
     <div className="container-studio relative z-20 pb-16 pt-36 md:pb-20">
       <div className="max-w-4xl">
-        <p className="mb-6 flex items-center gap-3 text-xs font-bold uppercase text-primary"><CircleDot className="h-4 w-4" />Industry-led production training</p>
+        <p className="mb-6 flex items-center gap-3 text-xs font-bold uppercase text-energy"><CircleDot className="h-4 w-4" />Industry-led production training</p>
         <h1 className="display-title text-[4.2rem] text-foreground sm:text-7xl md:text-8xl lg:text-[7.8rem]">Building Africa's Next Generation of <span className="text-primary">Game & Digital Artists</span></h1>
         <p className="mt-7 max-w-2xl text-base leading-7 text-foreground/75 md:text-lg">Industry-led training in Game Art, 3D, Animation and Game Development, designed to connect African talent with the standards of the global digital entertainment industry.</p>
         <div className="mt-9 flex flex-col gap-3 sm:flex-row"><ActionLink href="#contact">Request a workshop</ActionLink><ActionLink href="#partnerships" secondary>Partner with us</ActionLink></div>
@@ -125,7 +125,7 @@ function Experience() {
 
 function Programs() {
   return <section id="programs" className="section-space bg-background"><div className="container-studio"><SectionHeading kicker="Disciplines" title="From 3D Art to Game Production" copy="Learn the skills, workflows and tools used to create production-ready digital content for modern games and interactive experiences." />
-    <div className="grid gap-px bg-border md:grid-cols-2 lg:grid-cols-3">{disciplines.map(([title, text, image, number]) => <article key={title} className="group relative min-h-[460px] overflow-hidden bg-card"><img src={image} alt="" width={1536} height={1024} loading="lazy" className="absolute inset-0 h-full w-full object-cover grayscale transition duration-700 group-hover:scale-105 group-hover:grayscale-0" /><div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-transparent" /><span className="absolute left-6 top-6 text-xs font-bold text-primary">{number}</span><div className="absolute inset-x-0 bottom-0 p-7"><h3 className="display-title text-3xl text-foreground">{title}</h3><p className="mt-3 max-w-sm text-sm leading-6 text-foreground/65">{text}</p></div></article>)}</div>
+    <div className="grid gap-px bg-border md:grid-cols-2 lg:grid-cols-3">{disciplines.map(([title, text, image, number]) => <article key={title} className="group relative min-h-[460px] overflow-hidden bg-card"><img src={image} alt="" width={1536} height={1024} loading="lazy" className="vibranium-grade absolute inset-0 h-full w-full object-cover grayscale transition duration-700 group-hover:scale-105 group-hover:grayscale-0" /><div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-transparent" /><span className="absolute left-6 top-6 text-xs font-bold text-energy">{number}</span><div className="absolute inset-x-0 bottom-0 p-7"><h3 className="display-title text-3xl text-foreground">{title}</h3><p className="mt-3 max-w-sm text-sm leading-6 text-foreground/65">{text}</p></div></article>)}</div>
   </div></section>;
 }
 
@@ -136,7 +136,7 @@ function Audiences() {
 }
 
 function Process() {
-  return <section className="section-space grid-lines bg-background"><div className="container-studio"><SectionHeading kicker="Our approach" title="From Need to Production" /><div className="grid border-l border-t border-border sm:grid-cols-2 lg:grid-cols-4">{process.map(([number, title, text]) => <div key={title} className="min-h-72 border-b border-r border-border bg-background/90 p-7"><span className="font-display text-6xl text-primary">{number}</span><h3 className="mt-10 font-display text-2xl font-bold uppercase">{title}</h3><p className="mt-3 text-sm leading-6 text-muted-foreground">{text}</p></div>)}</div></div></section>;
+  return <section className="section-space grid-lines bg-background"><div className="container-studio"><SectionHeading kicker="Our approach" title="From Need to Production" /><div className="grid border-l border-t border-border sm:grid-cols-2 lg:grid-cols-4">{process.map(([number, title, text]) => <div key={title} className="min-h-72 border-b border-r border-border bg-background/90 p-7"><span className="font-display text-6xl text-energy">{number}</span><h3 className="mt-10 font-display text-2xl font-bold uppercase">{title}</h3><p className="mt-3 text-sm leading-6 text-muted-foreground">{text}</p></div>)}</div></div></section>;
 }
 
 function Workshop() {
@@ -164,7 +164,7 @@ function Founder() {
 
 function Partnerships() {
   const cards = [["Universities & Schools", "Bring a professional Game Art workshop to your students.", "Request a workshop"], ["Game Studios", "Develop the skills of your existing production team.", "Discuss training"], ["Organizations & Partners", "Explore partnerships supporting African digital talent.", "Become a partner"]];
-  return <section id="partnerships" className="section-space relative overflow-hidden bg-primary text-primary-foreground"><div className="absolute inset-0 grid-lines opacity-20" /><div className="container-studio relative"><p className="mb-5 text-xs font-extrabold uppercase">Partnerships</p><h2 className="display-title max-w-5xl text-6xl sm:text-7xl md:text-8xl lg:text-9xl">Let's Build the Future of Game Development in Africa</h2><p className="mt-7 max-w-3xl text-base leading-7 opacity-75 md:text-lg">Whether you are a student, university, technical institution, training organization or game studio, Skydiver Academy can bring professional game-industry knowledge and training to your community or team.</p><div className="mt-12 grid gap-px bg-primary-foreground/25 lg:grid-cols-3">{cards.map(([title, text, cta]) => <article key={title} className="flex min-h-72 flex-col bg-primary p-7"><h3 className="font-display text-3xl font-bold uppercase">{title}</h3><p className="mt-4 text-sm leading-6 opacity-70">{text}</p><a href="#contact" className="mt-auto flex items-center justify-between border-t border-primary-foreground/30 pt-5 text-xs font-extrabold uppercase">{cta}<ChevronRight className="h-4 w-4" /></a></article>)}</div></div></section>;
+  return <section id="partnerships" className="section-space relative overflow-hidden bg-primary text-primary-foreground"><div className="absolute inset-0 grid-lines opacity-25" /><div className="absolute inset-x-0 top-0 h-px bg-energy" /><div className="container-studio relative"><p className="mb-5 text-xs font-extrabold uppercase text-energy">Partnerships</p><h2 className="display-title max-w-5xl text-6xl sm:text-7xl md:text-8xl lg:text-9xl">Let's Build the Future of Game Development in Africa</h2><p className="mt-7 max-w-3xl text-base leading-7 opacity-75 md:text-lg">Whether you are a student, university, technical institution, training organization or game studio, Skydiver Academy can bring professional game-industry knowledge and training to your community or team.</p><div className="mt-12 grid gap-px bg-primary-foreground/25 lg:grid-cols-3">{cards.map(([title, text, cta]) => <article key={title} className="flex min-h-72 flex-col bg-primary p-7"><h3 className="font-display text-3xl font-bold uppercase">{title}</h3><p className="mt-4 text-sm leading-6 opacity-70">{text}</p><a href="#contact" className="mt-auto flex items-center justify-between border-t border-primary-foreground/30 pt-5 text-xs font-extrabold uppercase transition hover:text-energy">{cta}<ChevronRight className="h-4 w-4" /></a></article>)}</div></div></section>;
 }
 
 function Contact() {
