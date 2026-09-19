@@ -9,6 +9,7 @@ import workshopArt from "../assets/skydiver-workshop.jpg";
 import characterArt from "../assets/skydiver-character.jpg";
 import environmentArt from "../assets/skydiver-environment.jpg";
 import hardSurfaceArt from "../assets/skydiver-hard-surface.jpg";
+import logoAsset from "../assets/logo-skydiver.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
