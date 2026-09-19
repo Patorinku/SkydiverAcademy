@@ -44,15 +44,15 @@
   --secondary-foreground: oklch(0.94 0.012 282);
   --muted: oklch(0.175 0.023 284);
   --muted-foreground: oklch(0.72 0.025 276);
-  --accent: oklch(0.75 0.145 218);
+  --accent: #F5B041;
   --accent-foreground: oklch(0.09 0.02 275);
   --border: oklch(0.32 0.048 289);
   --input: oklch(0.205 0.032 284);
-  --ring: oklch(0.75 0.145 218);
+  --ring: #F5B041;
   --panel: oklch(0.12 0.022 286);
   --panel-raised: oklch(0.17 0.035 289);
   --vibranium: oklch(0.66 0.2 302);
-  --energy: oklch(0.75 0.145 218);
+  --energy: #F5B041;
   --silver: oklch(0.79 0.022 276);
   --ink: oklch(0.055 0.014 286);
 }
