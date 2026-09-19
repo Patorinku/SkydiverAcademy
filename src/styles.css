@@ -27,30 +27,34 @@
   --color-ring: var(--ring);
   --color-panel: var(--panel);
   --color-panel-raised: var(--panel-raised);
-  --color-copper-soft: var(--copper-soft);
+  --color-vibranium: var(--vibranium);
+  --color-energy: var(--energy);
+  --color-silver: var(--silver);
   --color-ink: var(--ink);
 }
 
 :root {
-  --background: oklch(0.11 0.008 65);
-  --foreground: oklch(0.94 0.01 75);
-  --card: oklch(0.16 0.009 65);
-  --card-foreground: oklch(0.94 0.01 75);
-  --primary: oklch(0.69 0.115 54);
-  --primary-foreground: oklch(0.12 0.01 65);
-  --secondary: oklch(0.22 0.012 65);
-  --secondary-foreground: oklch(0.94 0.01 75);
-  --muted: oklch(0.19 0.009 65);
-  --muted-foreground: oklch(0.68 0.018 70);
-  --accent: oklch(0.76 0.12 65);
-  --accent-foreground: oklch(0.12 0.01 65);
-  --border: oklch(0.3 0.012 65);
-  --input: oklch(0.22 0.01 65);
-  --ring: oklch(0.69 0.115 54);
-  --panel: oklch(0.135 0.008 65);
-  --panel-raised: oklch(0.18 0.01 65);
-  --copper-soft: oklch(0.8 0.065 65);
-  --ink: oklch(0.075 0.005 65);
+  --background: oklch(0.095 0.014 286);
+  --foreground: oklch(0.94 0.012 282);
+  --card: oklch(0.145 0.025 286);
+  --card-foreground: oklch(0.94 0.012 282);
+  --primary: oklch(0.66 0.2 302);
+  --primary-foreground: oklch(0.98 0.005 280);
+  --secondary: oklch(0.2 0.035 282);
+  --secondary-foreground: oklch(0.94 0.012 282);
+  --muted: oklch(0.175 0.023 284);
+  --muted-foreground: oklch(0.72 0.025 276);
+  --accent: oklch(0.75 0.145 218);
+  --accent-foreground: oklch(0.09 0.02 275);
+  --border: oklch(0.32 0.048 289);
+  --input: oklch(0.205 0.032 284);
+  --ring: oklch(0.75 0.145 218);
+  --panel: oklch(0.12 0.022 286);
+  --panel-raised: oklch(0.17 0.035 289);
+  --vibranium: oklch(0.66 0.2 302);
+  --energy: oklch(0.75 0.145 218);
+  --silver: oklch(0.79 0.022 276);
+  --ink: oklch(0.055 0.014 286);
 }
 
 * { border-color: var(--border); }
@@ -92,6 +96,14 @@ body {
     pointer-events: none;
     background: linear-gradient(180deg, transparent 45%, color-mix(in oklab, var(--ink) 88%, transparent));
   }
+}
+
+@utility vibranium-grade {
+  filter: saturate(0.78) contrast(1.08) hue-rotate(18deg);
+}
+
+@utility energy-glow {
+  box-shadow: 0 0 28px color-mix(in oklab, var(--energy) 18%, transparent);
 }
 
 @utility grid-lines {
