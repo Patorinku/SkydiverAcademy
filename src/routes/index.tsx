@@ -149,8 +149,13 @@ function Portfolio() {
 }
 
 function Why() {
-  const reasons = [[Crosshair, "Industry-Led", "Training is built around real production experience rather than purely theoretical education."], [Layers3, "Production-Focused", "Students learn practical workflows used to create digital content for games and cinematic productions."], [Globe2, "International Perspective", "Training introduces African talent to international production standards and global career opportunities."], [Sparkles, "African Talent", "Our goal is to help talented African creators participate in the global digital entertainment industry."]];
-  return <section className="section-space border-y border-border bg-panel"><div className="container-studio"><SectionHeading kicker="The difference" title="Why Skydiver Academy?" /><div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">{reasons.map(([Icon, title, text]) => { const ReasonIcon = Icon; return <div key={String(title)} className="border-t border-primary pt-7"><ReasonIcon className="h-7 w-7 text-primary" /><h3 className="mt-8 font-display text-2xl font-bold uppercase">{String(title)}</h3><p className="mt-4 text-sm leading-6 text-muted-foreground">{String(text)}</p></div>; })}</div></div></section>;
+  const reasons = [
+    { icon: <Crosshair className="h-7 w-7 text-primary" />, title: "Industry-Led", text: "Training is built around real production experience rather than purely theoretical education." },
+    { icon: <Layers3 className="h-7 w-7 text-primary" />, title: "Production-Focused", text: "Students learn practical workflows used to create digital content for games and cinematic productions." },
+    { icon: <Globe2 className="h-7 w-7 text-primary" />, title: "International Perspective", text: "Training introduces African talent to international production standards and global career opportunities." },
+    { icon: <Sparkles className="h-7 w-7 text-primary" />, title: "African Talent", text: "Our goal is to help talented African creators participate in the global digital entertainment industry." },
+  ];
+  return <section className="section-space border-y border-border bg-panel"><div className="container-studio"><SectionHeading kicker="The difference" title="Why Skydiver Academy?" /><div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">{reasons.map((reason) => <div key={reason.title} className="border-t border-primary pt-7">{reason.icon}<h3 className="mt-8 font-display text-2xl font-bold uppercase">{reason.title}</h3><p className="mt-4 text-sm leading-6 text-muted-foreground">{reason.text}</p></div>)}</div></div></section>;
 }
 
 function Founder() {
