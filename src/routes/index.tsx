@@ -51,7 +51,7 @@ const portfolio = [
   ["Character Art", characterArt, "md:col-span-5 md:row-span-2"],
   ["Weapons", weaponAk.url, "md:col-span-7"],
   ["Environment Art", neonCityArt.url, "md:col-span-4"],
-  ["Vehicles & Props", hardSurfaceArt, "md:col-span-3"],
+  ["Vehicles & Props", vehicleTactical.url, "md:col-span-3"],
   ["Unreal Engine", unrealTemple.url, "md:col-span-7"],
   ["Cinematics", neonCityArt.url, "md:col-span-5"],
 ];
