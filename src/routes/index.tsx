@@ -8,7 +8,7 @@ import heroArt from "../assets/skydiver-hero.jpg";
 import weaponAk from "../assets/weapon-ak.jpg.asset.json";
 import characterArt from "../assets/skydiver-character.jpg";
 import neonCityArt from "../assets/neon-city.jpg.asset.json";
-import hardSurfaceArt from "../assets/skydiver-hard-surface.jpg";
+import vehicleTactical from "../assets/vehicle-tactical.jpg.asset.json";
 import logoAsset from "../assets/logo-skydiver.jpg.asset.json";
 import batmanArt from "../assets/batman-character.webp.asset.json";
 import unrealTemple from "../assets/unreal-temple.jpg.asset.json";
@@ -29,7 +29,7 @@ const disciplines = [
   ["Character Art", "High-poly sculpting, anatomy, retopology, clothing, hair, texturing and optimization.", characterArt, "01"],
   ["Environment Art", "Modular environments, props, materials, composition, lighting and optimization.", neonCityArt.url, "02"],
   ["Weapons & Hard Surface", "Production-ready weapons, hard-surface modelling, topology and PBR workflows.", weaponAk.url, "03"],
-  ["Vehicles & Props", "Designing and producing detailed assets for real-time environments.", hardSurfaceArt, "04"],
+  ["Vehicles & Props", "Designing and producing detailed assets for real-time environments.", vehicleTactical.url, "04"],
   ["Animation & Cinematics", "Rigging, animation, cinematics and storytelling for games and digital productions.", unrealTemple.url, "05"],
   ["Game Engine & Technical Skills", "Unreal Engine, Unity, materials, shaders, optimization and real-time implementation.", neonCityArt.url, "06"],
 ];
@@ -51,7 +51,7 @@ const portfolio = [
   ["Character Art", characterArt, "md:col-span-5 md:row-span-2"],
   ["Weapons", weaponAk.url, "md:col-span-7"],
   ["Environment Art", neonCityArt.url, "md:col-span-4"],
-  ["Vehicles & Props", hardSurfaceArt, "md:col-span-3"],
+  ["Vehicles & Props", vehicleTactical.url, "md:col-span-3"],
   ["Unreal Engine", unrealTemple.url, "md:col-span-7"],
   ["Cinematics", neonCityArt.url, "md:col-span-5"],
 ];
