@@ -29,7 +29,7 @@ const disciplines = [
   ["Character Art", "High-poly sculpting, anatomy, retopology, clothing, hair, texturing and optimization.", characterArt, "01"],
   ["Environment Art", "Modular environments, props, materials, composition, lighting and optimization.", neonCityArt.url, "02"],
   ["Weapons & Hard Surface", "Production-ready weapons, hard-surface modelling, topology and PBR workflows.", weaponAk.url, "03"],
-  ["Vehicles & Props", "Designing and producing detailed assets for real-time environments.", hardSurfaceArt, "04"],
+  ["Vehicles & Props", "Designing and producing detailed assets for real-time environments.", vehicleTactical.url, "04"],
   ["Animation & Cinematics", "Rigging, animation, cinematics and storytelling for games and digital productions.", unrealTemple.url, "05"],
   ["Game Engine & Technical Skills", "Unreal Engine, Unity, materials, shaders, optimization and real-time implementation.", neonCityArt.url, "06"],
 ];
