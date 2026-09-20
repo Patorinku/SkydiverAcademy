@@ -8,7 +8,7 @@ import heroArt from "../assets/skydiver-hero.jpg";
 import weaponAk from "../assets/weapon-ak.jpg.asset.json";
 import characterArt from "../assets/skydiver-character.jpg";
 import neonCityArt from "../assets/neon-city.jpg.asset.json";
-import hardSurfaceArt from "../assets/skydiver-hard-surface.jpg";
+import vehicleTactical from "../assets/vehicle-tactical.jpg.asset.json";
 import logoAsset from "../assets/logo-skydiver.jpg.asset.json";
 import batmanArt from "../assets/batman-character.webp.asset.json";
 import unrealTemple from "../assets/unreal-temple.jpg.asset.json";
