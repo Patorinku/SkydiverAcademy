@@ -6,7 +6,6 @@ import {
 } from "lucide-react";
 import heroArt from "../assets/skydiver-hero.jpg";
 import weaponAk from "../assets/weapon-ak.jpg.asset.json";
-import weaponAk from "../assets/weapon-ak.jpg.asset.json";
 import characterArt from "../assets/skydiver-character.jpg";
 import environmentArt from "../assets/skydiver-environment.jpg";
 import hardSurfaceArt from "../assets/skydiver-hard-surface.jpg";
