@@ -31,7 +31,7 @@ const disciplines = [
   ["Weapons & Hard Surface", "Production-ready weapons, hard-surface modelling, topology and PBR workflows.", weaponAk.url, "03"],
   ["Vehicles & Props", "Designing and producing detailed assets for real-time environments.", hardSurfaceArt, "04"],
   ["Animation & Cinematics", "Rigging, animation, cinematics and storytelling for games and digital productions.", unrealTemple.url, "05"],
-  ["Game Engine & Technical Skills", "Unreal Engine, Unity, materials, shaders, optimization and real-time implementation.", environmentArt, "06"],
+  ["Game Engine & Technical Skills", "Unreal Engine, Unity, materials, shaders, optimization and real-time implementation.", neonCityArt.url, "06"],
 ];
 
 const audiences = [
@@ -53,7 +53,7 @@ const portfolio = [
   ["Environment Art", neonCityArt.url, "md:col-span-4"],
   ["Vehicles & Props", hardSurfaceArt, "md:col-span-3"],
   ["Unreal Engine", unrealTemple.url, "md:col-span-7"],
-  ["Cinematics", environmentArt, "md:col-span-5"],
+  ["Cinematics", neonCityArt.url, "md:col-span-5"],
 ];
 
 function SectionHeading({ kicker, title, copy }: { kicker: string; title: string; copy?: string }) {
