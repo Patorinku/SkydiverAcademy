@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import heroArt from "../assets/skydiver-hero.jpg";
 import workshopArt from "../assets/skydiver-workshop.jpg";
+import weaponAk from "../assets/weapon-ak.jpg.asset.json";
 import characterArt from "../assets/skydiver-character.jpg";
 import environmentArt from "../assets/skydiver-environment.jpg";
 import hardSurfaceArt from "../assets/skydiver-hard-surface.jpg";
@@ -28,7 +29,7 @@ export const Route = createFileRoute("/")({
 const disciplines = [
   ["Character Art", "High-poly sculpting, anatomy, retopology, clothing, hair, texturing and optimization.", characterArt, "01"],
   ["Environment Art", "Modular environments, props, materials, composition, lighting and optimization.", environmentArt, "02"],
-  ["Weapons & Hard Surface", "Production-ready weapons, hard-surface modelling, topology and PBR workflows.", workshopArt, "03"],
+  ["Weapons & Hard Surface", "Production-ready weapons, hard-surface modelling, topology and PBR workflows.", weaponAk.url, "03"],
   ["Vehicles & Props", "Designing and producing detailed assets for real-time environments.", hardSurfaceArt, "04"],
   ["Animation & Cinematics", "Rigging, animation, cinematics and storytelling for games and digital productions.", unrealTemple.url, "05"],
   ["Game Engine & Technical Skills", "Unreal Engine, Unity, materials, shaders, optimization and real-time implementation.", environmentArt, "06"],
@@ -49,7 +50,7 @@ const process = [
 
 const portfolio = [
   ["Character Art", characterArt, "md:col-span-5 md:row-span-2"],
-  ["Weapons", workshopArt, "md:col-span-7"],
+  ["Weapons", weaponAk.url, "md:col-span-7"],
   ["Environment Art", environmentArt, "md:col-span-4"],
   ["Vehicles & Props", hardSurfaceArt, "md:col-span-3"],
   ["Unreal Engine", unrealTemple.url, "md:col-span-7"],
@@ -145,7 +146,7 @@ function Process() {
 
 function Workshop() {
   const topics = ["Game Development Pipeline", "Character Art", "Environment Art", "Weapons & Hard Surface", "Texturing & PBR", "Unreal Engine", "Careers in the Global Game Industry"];
-  return <section id="workshop" className="relative overflow-hidden border-y border-border bg-panel"><div className="grid min-h-[760px] lg:grid-cols-2"><div className="relative min-h-[430px] lg:order-2 lg:min-h-full"><img src={workshopArt} alt="AAA hard-surface asset production showcase" width={1536} height={1024} loading="lazy" className="absolute inset-0 h-full w-full object-cover" /><div className="absolute inset-0 bg-gradient-to-t from-panel via-transparent to-transparent lg:bg-gradient-to-r lg:from-panel lg:to-transparent" /><span className="absolute right-5 top-5 border border-foreground/25 bg-ink/60 px-3 py-2 text-[10px] font-bold uppercase backdrop-blur">Featured workshop</span></div><div className="container-studio py-16 lg:col-span-2 lg:row-start-1 lg:grid lg:grid-cols-2 lg:py-24"><div className="relative z-10 lg:pr-16"><p className="mb-5 text-xs font-bold uppercase text-primary">Flagship masterclass</p><h2 className="display-title text-5xl sm:text-6xl md:text-7xl">Introduction to the Video Game Industry & AAA Game Art</h2><p className="mt-6 max-w-xl text-base leading-7 text-muted-foreground">Discover how professional video games are created, from concept and 3D production to the final game engine.</p><div className="mt-8 flex flex-wrap gap-2">{topics.map((topic) => <span key={topic} className="border border-border px-3 py-2 text-[10px] font-bold uppercase text-foreground/70">{topic}</span>)}</div><div className="my-8 grid grid-cols-1 gap-4 border-y border-border py-5 text-xs font-bold uppercase sm:grid-cols-3"><span>2–3 Hours</span><span>Masterclass / Workshop</span><span>Douala • Yaoundé • Online</span></div><ActionLink href="#contact">Request this workshop</ActionLink></div></div></div></section>;
+  return <section id="workshop" className="relative overflow-hidden border-y border-border bg-panel"><div className="grid min-h-[760px] lg:grid-cols-2"><div className="relative min-h-[430px] lg:order-2 lg:min-h-full"><img src={weaponAk.url} alt="AAA weapons and hard-surface asset production showcase" width={1920} height={1080} loading="lazy" className="absolute inset-0 h-full w-full object-cover" /><div className="absolute inset-0 bg-gradient-to-t from-panel via-transparent to-transparent lg:bg-gradient-to-r lg:from-panel lg:to-transparent" /><span className="absolute right-5 top-5 border border-foreground/25 bg-ink/60 px-3 py-2 text-[10px] font-bold uppercase backdrop-blur">Featured workshop</span></div><div className="container-studio py-16 lg:col-span-2 lg:row-start-1 lg:grid lg:grid-cols-2 lg:py-24"><div className="relative z-10 lg:pr-16"><p className="mb-5 text-xs font-bold uppercase text-primary">Flagship masterclass</p><h2 className="display-title text-5xl sm:text-6xl md:text-7xl">Introduction to the Video Game Industry & AAA Game Art</h2><p className="mt-6 max-w-xl text-base leading-7 text-muted-foreground">Discover how professional video games are created, from concept and 3D production to the final game engine.</p><div className="mt-8 flex flex-wrap gap-2">{topics.map((topic) => <span key={topic} className="border border-border px-3 py-2 text-[10px] font-bold uppercase text-foreground/70">{topic}</span>)}</div><div className="my-8 grid grid-cols-1 gap-4 border-y border-border py-5 text-xs font-bold uppercase sm:grid-cols-3"><span>2–3 Hours</span><span>Masterclass / Workshop</span><span>Douala • Yaoundé • Online</span></div><ActionLink href="#contact">Request this workshop</ActionLink></div></div></div></section>;
 }
 
 function Portfolio() {
