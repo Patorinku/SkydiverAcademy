@@ -5,7 +5,7 @@ import {
   Cpu, Crosshair, Globe2, Layers3, Menu, Play, Send, Shapes, Sparkles, Target, X,
 } from "lucide-react";
 import heroArt from "../assets/skydiver-hero.jpg";
-import workshopArt from "../assets/skydiver-workshop.jpg";
+import weaponAk from "../assets/weapon-ak.jpg.asset.json";
 import weaponAk from "../assets/weapon-ak.jpg.asset.json";
 import characterArt from "../assets/skydiver-character.jpg";
 import environmentArt from "../assets/skydiver-environment.jpg";
