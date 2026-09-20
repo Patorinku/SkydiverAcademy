@@ -10,6 +10,7 @@ import characterArt from "../assets/skydiver-character.jpg";
 import environmentArt from "../assets/skydiver-environment.jpg";
 import hardSurfaceArt from "../assets/skydiver-hard-surface.jpg";
 import logoAsset from "../assets/logo-skydiver.jpg.asset.json";
+import batmanArt from "../assets/batman-character.webp.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
@@ -94,8 +95,8 @@ function Header() {
 
 function Hero() {
   return <section id="top" className="relative flex min-h-[920px] items-end overflow-hidden bg-ink md:min-h-[900px]">
-    <img src={heroArt} alt="Futuristic African game character overlooking a cinematic digital world" width={1920} height={1280} className="hero-art vibranium-grade absolute inset-0 h-full w-full object-cover object-[62%_center]" />
-    <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/10" />
+    <img src={batmanArt.url} alt="Batman character turnaround — professional 3D character artwork by Patrick Benai" width={1920} height={1080} className="hero-art vibranium-grade absolute inset-0 h-full w-full object-cover object-center" />
+    <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/75 to-ink/10" />
     <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40" />
     <div className="scan-line absolute inset-x-0 top-0 z-10 h-px bg-energy/70" />
     <div className="container-studio relative z-20 pb-16 pt-36 md:pb-20">
