@@ -11,6 +11,7 @@ import environmentArt from "../assets/skydiver-environment.jpg";
 import hardSurfaceArt from "../assets/skydiver-hard-surface.jpg";
 import logoAsset from "../assets/logo-skydiver.jpg.asset.json";
 import batmanArt from "../assets/batman-character.webp.asset.json";
+import unrealTemple from "../assets/unreal-temple.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
@@ -29,7 +30,7 @@ const disciplines = [
   ["Environment Art", "Modular environments, props, materials, composition, lighting and optimization.", environmentArt, "02"],
   ["Weapons & Hard Surface", "Production-ready weapons, hard-surface modelling, topology and PBR workflows.", workshopArt, "03"],
   ["Vehicles & Props", "Designing and producing detailed assets for real-time environments.", hardSurfaceArt, "04"],
-  ["Animation & Cinematics", "Rigging, animation, cinematics and storytelling for games and digital productions.", heroArt, "05"],
+  ["Animation & Cinematics", "Rigging, animation, cinematics and storytelling for games and digital productions.", unrealTemple.url, "05"],
   ["Game Engine & Technical Skills", "Unreal Engine, Unity, materials, shaders, optimization and real-time implementation.", environmentArt, "06"],
 ];
 
@@ -51,7 +52,7 @@ const portfolio = [
   ["Weapons", workshopArt, "md:col-span-7"],
   ["Environment Art", environmentArt, "md:col-span-4"],
   ["Vehicles & Props", hardSurfaceArt, "md:col-span-3"],
-  ["Unreal Engine", heroArt, "md:col-span-7"],
+  ["Unreal Engine", unrealTemple.url, "md:col-span-7"],
   ["Cinematics", environmentArt, "md:col-span-5"],
 ];
 
