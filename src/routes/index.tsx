@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
 });
 
 const disciplines = [
-  ["Character Art", "High-poly sculpting, anatomy, retopology, clothing, hair, texturing and optimization.", characterArt, "01"],
+  ["Character Art", "High-poly sculpting, anatomy, retopology, clothing, hair, texturing and optimization.", characterArt.url, "01"],
   ["Environment Art", "Modular environments, props, materials, composition, lighting and optimization.", neonCityArt.url, "02"],
   ["Weapons & Hard Surface", "Production-ready weapons, hard-surface modelling, topology and PBR workflows.", weaponAk.url, "03"],
   ["Vehicles & Props", "Designing and producing detailed assets for real-time environments.", vehicleTactical.url, "04"],
@@ -48,7 +48,7 @@ const process = [
 ];
 
 const portfolio = [
-  ["Character Art", characterArt, "md:col-span-5 md:row-span-2"],
+  ["Character Art", characterArt.url, "md:col-span-5 md:row-span-2"],
   ["Weapons", weaponAk.url, "md:col-span-7"],
   ["Environment Art", neonCityArt.url, "md:col-span-4"],
   ["Vehicles & Props", vehicleTactical.url, "md:col-span-3"],
@@ -163,7 +163,7 @@ function Why() {
 }
 
 function Founder() {
-  return <section id="founder" className="section-space bg-background"><div className="container-studio grid items-center gap-14 lg:grid-cols-2"><div className="relative min-h-[560px] overflow-hidden"><img src={characterArt} alt="Professional character artwork representing the founder's 3D specialism" width={1536} height={1536} loading="lazy" className="absolute inset-0 h-full w-full object-cover" /><div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink to-transparent p-7 pt-28"><span className="text-xs font-bold uppercase text-primary">Portrait placeholder • replaceable</span></div></div><div><SectionHeading kicker="Industry leadership" title="Meet the Founder" /><p className="font-display text-3xl font-bold uppercase">Patrick Benai</p><p className="mt-1 text-sm font-bold uppercase text-primary">Senior 3D Character & Weapons Artist</p><p className="mt-7 max-w-xl text-base leading-8 text-muted-foreground">Patrick is a 3D artist with more than 10 years of professional experience across international game and cinematic production. His practice spans character art, weapons, hard-surface modelling, texturing and real-time production.</p><p className="mt-5 max-w-xl text-base leading-8 text-muted-foreground">Through Skydiver Academy, he translates the standards, discipline and workflows of professional production into practical learning experiences for Africa's next generation of creators.</p><div className="mt-9"><ActionLink href="https://www.artstation.com/patrickbenai" secondary>View portfolio</ActionLink></div></div></div></section>;
+  return <section id="founder" className="section-space bg-background"><div className="container-studio grid items-center gap-14 lg:grid-cols-2"><div className="relative min-h-[560px] overflow-hidden"><img src={characterArt.url} alt="Professional character artwork representing the founder's 3D specialism" width={1424} height={1800} loading="lazy" className="absolute inset-0 h-full w-full object-cover" /><div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink to-transparent p-7 pt-28"><span className="text-xs font-bold uppercase text-primary">Portrait placeholder • replaceable</span></div></div><div><SectionHeading kicker="Industry leadership" title="Meet the Founder" /><p className="font-display text-3xl font-bold uppercase">Patrick Benai</p><p className="mt-1 text-sm font-bold uppercase text-primary">Senior 3D Character & Weapons Artist</p><p className="mt-7 max-w-xl text-base leading-8 text-muted-foreground">Patrick is a 3D artist with more than 10 years of professional experience across international game and cinematic production. His practice spans character art, weapons, hard-surface modelling, texturing and real-time production.</p><p className="mt-5 max-w-xl text-base leading-8 text-muted-foreground">Through Skydiver Academy, he translates the standards, discipline and workflows of professional production into practical learning experiences for Africa's next generation of creators.</p><div className="mt-9"><ActionLink href="https://www.artstation.com/patrickbenai" secondary>View portfolio</ActionLink></div></div></div></section>;
 }
 
 function Partnerships() {
