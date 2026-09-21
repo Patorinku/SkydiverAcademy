@@ -12,6 +12,7 @@ import vehicleTactical from "../assets/vehicle-tactical.jpg.asset.json";
 import logoAsset from "../assets/logo-skydiver.jpg.asset.json";
 import batmanArt from "../assets/batman-character.webp.asset.json";
 import unrealTemple from "../assets/unreal-temple.jpg.asset.json";
+import unrealGameEngine from "../assets/unreal-game-engine.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
@@ -31,7 +32,7 @@ const disciplines = [
   ["Weapons & Hard Surface", "Production-ready weapons, hard-surface modelling, topology and PBR workflows.", weaponAk.url, "03"],
   ["Vehicles & Props", "Designing and producing detailed assets for real-time environments.", vehicleTactical.url, "04"],
   ["Animation & Cinematics", "Rigging, animation, cinematics and storytelling for games and digital productions.", unrealTemple.url, "05"],
-  ["Game Engine & Technical Skills", "Unreal Engine, Unity, materials, shaders, optimization and real-time implementation.", neonCityArt.url, "06"],
+  ["Game Engine & Technical Skills", "Unreal Engine, Unity, materials, shaders, optimization and real-time implementation.", unrealGameEngine.url, "06"],
 ];
 
 const audiences = [
