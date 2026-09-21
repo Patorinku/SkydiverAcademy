@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import heroArt from "../assets/skydiver-hero.jpg";
 import weaponAk from "../assets/weapon-ak.jpg.asset.json";
-import characterArt from "../assets/soldier-character.jpg.asset.json";
+import characterArt from "../assets/patrick-benai-render.jpg.asset.json";
 import neonCityArt from "../assets/neon-city.jpg.asset.json";
 import vehicleTactical from "../assets/vehicle-tactical.jpg.asset.json";
 import logoAsset from "../assets/logo-skydiver.jpg.asset.json";
