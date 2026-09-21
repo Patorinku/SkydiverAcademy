@@ -12,6 +12,7 @@ import vehicleTactical from "../assets/vehicle-tactical.jpg.asset.json";
 import logoAsset from "../assets/logo-skydiver.jpg.asset.json";
 import batmanArt from "../assets/batman-character.webp.asset.json";
 import unrealTemple from "../assets/unreal-temple.jpg.asset.json";
+import unrealGameEngine from "../assets/unreal-game-engine.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
