@@ -14,6 +14,23 @@ import batmanArt from "../assets/batman-character.webp.asset.json";
 import unrealTemple from "../assets/unreal-temple.jpg.asset.json";
 import unrealGameEngine from "../assets/unreal-game-engine.png.asset.json";
 import cinematicsArt from "../assets/cinematics-metahuman.jpg.asset.json";
+import gameArma from "../assets/Arma_DLC.jpg.asset.json";
+import gameBloodhunt from "../assets/Blood_Hunt.jpg.asset.json";
+import gameWarframe from "../assets/warframe_moderncover.webp.asset.json";
+import gameBorderlands from "../assets/Borderlands_4.jpg.asset.json";
+import gameCrossfire from "../assets/co2iie.webp.asset.json";
+import gameWalkingDead from "../assets/OTWD_Aidan_RevealArt_logos.avif.asset.json";
+import gamePayday from "../assets/payday_crimewar.webp.asset.json";
+
+const shippedTitles = [
+  { src: gameBorderlands.url, name: "Borderlands 4" },
+  { src: gameBloodhunt.url, name: "Vampire: The Masquerade - Bloodhunt" },
+  { src: gameWarframe.url, name: "Warframe" },
+  { src: gameArma.url, name: "Arma 3: S.O.G. Prairie Fire" },
+  { src: gameCrossfire.url, name: "CrossFire" },
+  { src: gamePayday.url, name: "PAYDAY: Crime War" },
+  { src: gameWalkingDead.url, name: "Overkill's The Walking Dead" },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
@@ -181,10 +198,26 @@ function Contact() {
   </div></section>;
 }
 
+function ShippedGames() {
+  return <section id="games" className="section-space border-y border-border bg-panel">
+    <div className="container-studio">
+      <SectionHeading kicker="Production credits" title="Games Worked On" />
+      <p className="max-w-2xl text-base leading-8 text-muted-foreground">A selection of commercial game titles Patrick has contributed to across character art, weapons and hard-surface production.</p>
+      <ul className="mt-12 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
+        {shippedTitles.map((game) => <li key={game.name} className="group relative aspect-[3/4] overflow-hidden border border-border bg-ink">
+          <img src={game.src} alt={game.name} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
+          <span className="absolute inset-x-0 bottom-0 p-4 text-[11px] font-bold uppercase leading-4 text-foreground">{game.name}</span>
+        </li>)}
+      </ul>
+    </div>
+  </section>;
+}
+
 function Footer() {
   return <footer className="border-t border-border bg-ink py-10"><div className="container-studio"><div className="flex flex-col justify-between gap-8 md:flex-row md:items-start"><div><Logo /><p className="mt-4 text-xs text-muted-foreground">Game Art • 3D • Animation • Game Development</p></div><nav className="flex flex-wrap gap-x-7 gap-y-3 text-[11px] font-bold uppercase text-foreground/60" aria-label="Footer navigation"><a href="#programs">Programs</a><a href="#audiences">For Institutions</a><a href="#audiences">For Studios</a><a href="#workshop">Workshops</a><a href="#founder">About</a><a href="#contact">Contact</a></nav></div><div className="mt-10 flex flex-col justify-between gap-2 border-t border-border pt-5 text-[10px] uppercase text-muted-foreground sm:flex-row"><span>© {new Date().getFullYear()} Skydiver Academy</span><span>Built for Africa. Ready for the world.</span></div></div></footer>;
 }
 
 function Index() {
-  return <main><Header /><Hero /><Experience /><Programs /><Audiences /><Process /><Workshop /><Portfolio /><Why /><Founder /><Partnerships /><Contact /><Footer /></main>;
+  return <main><Header /><Hero /><Experience /><Programs /><Audiences /><Process /><Workshop /><Portfolio /><Why /><Founder /><ShippedGames /><Partnerships /><Contact /><Footer /></main>;
 }
