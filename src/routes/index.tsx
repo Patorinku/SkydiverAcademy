@@ -13,6 +13,7 @@ import logoAsset from "../assets/logo-skydiver.jpg.asset.json";
 import batmanArt from "../assets/batman-character.webp.asset.json";
 import unrealTemple from "../assets/unreal-temple.jpg.asset.json";
 import unrealGameEngine from "../assets/unreal-game-engine.png.asset.json";
+import cinematicsArt from "../assets/cinematics-metahuman.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
