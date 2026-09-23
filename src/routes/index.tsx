@@ -165,7 +165,29 @@ function Process() {
 
 function Workshop() {
   const topics = ["Game Development Pipeline", "Character Art", "Environment Art", "Weapons & Hard Surface", "Texturing & PBR", "Unreal Engine", "Careers in the Global Game Industry"];
-  return <section id="workshop" className="relative overflow-hidden border-y border-border bg-panel"><div className="grid min-h-[760px] lg:grid-cols-2"><div className="relative min-h-[430px] lg:order-2 lg:min-h-full"><img src={weaponAk.url} alt="AAA weapons and hard-surface asset production showcase" width={1920} height={1080} loading="lazy" className="absolute inset-0 h-full w-full object-cover" /><div className="absolute inset-0 bg-gradient-to-t from-panel via-transparent to-transparent lg:bg-gradient-to-r lg:from-panel lg:to-transparent" /><span className="absolute right-5 top-5 border border-foreground/25 bg-ink/60 px-3 py-2 text-[10px] font-bold uppercase backdrop-blur">Featured workshop</span></div><div className="container-studio py-16 lg:col-span-2 lg:row-start-1 lg:grid lg:grid-cols-2 lg:py-24"><div className="relative z-10 lg:pr-16"><p className="mb-5 text-xs font-bold uppercase text-primary">Flagship masterclass</p><h2 className="display-title text-5xl sm:text-6xl md:text-7xl">Introduction to the Video Game Industry & AAA Game Art</h2><p className="mt-6 max-w-xl text-base leading-7 text-muted-foreground">Discover how professional video games are created, from concept and 3D production to the final game engine.</p><div className="mt-8 flex flex-wrap gap-2">{topics.map((topic) => <span key={topic} className="border border-border px-3 py-2 text-[10px] font-bold uppercase text-foreground/70">{topic}</span>)}</div><div className="my-8 grid grid-cols-1 gap-4 border-y border-border py-5 text-xs font-bold uppercase sm:grid-cols-3"><span>2–3 Hours</span><span>Masterclass / Workshop</span><span>Douala • Yaoundé • Online</span></div><ActionLink href="#contact">Request this workshop</ActionLink></div></div></div></section>;
+  return <section id="workshop" className="relative overflow-hidden border-y border-border bg-panel">
+    <div className="image-shade relative h-[46vh] min-h-[320px] w-full lg:h-[58vh]">
+      <img src={weaponAk.url} alt="AAA weapons and hard-surface asset production showcase" width={1920} height={1080} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+      <div className="absolute inset-0 bg-gradient-to-t from-panel via-panel/35 to-transparent" />
+      <span className="absolute right-5 top-5 z-10 border border-foreground/25 bg-ink/60 px-3 py-2 text-[10px] font-bold uppercase backdrop-blur">Featured workshop</span>
+      <div className="container-studio absolute inset-x-0 bottom-0 z-10 pb-8 lg:pb-12">
+        <p className="mb-4 text-xs font-bold uppercase text-primary">Flagship masterclass</p>
+        <h2 className="display-title max-w-5xl text-4xl sm:text-6xl md:text-7xl">Introduction to the Video Game Industry &amp; AAA Game Art</h2>
+      </div>
+    </div>
+    <div className="container-studio py-12 lg:py-16">
+      <p className="max-w-3xl text-base leading-7 text-muted-foreground">Discover how professional video games are created, from concept and 3D production to the final game engine.</p>
+      <div className="mt-10 grid grid-cols-2 border-l border-t border-border sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
+        {topics.map((topic) => <span key={topic} className="flex min-h-20 items-center border-b border-r border-border px-4 py-4 text-[10px] font-bold uppercase leading-4 text-foreground/70 transition hover:bg-panel-raised hover:text-foreground">{topic}</span>)}
+      </div>
+      <div className="mt-10 flex flex-col gap-6 border-y border-border py-6 lg:flex-row lg:items-center lg:justify-between">
+        <div className="grid flex-1 grid-cols-1 gap-4 text-xs font-bold uppercase sm:grid-cols-3">
+          <span>2–3 Hours</span><span>Masterclass / Workshop</span><span>Douala • Yaoundé • Online</span>
+        </div>
+        <ActionLink href="#contact">Request this workshop</ActionLink>
+      </div>
+    </div>
+  </section>;
 }
 
 function Portfolio() {
