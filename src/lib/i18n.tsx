@@ -157,8 +157,8 @@ const fr: Dict = {
   },
   hero: {
     kicker: "Formation professionnelle issue de l'industrie",
-    title: "Former la prochaine génération d'",
-    titleAccent: "artistes du jeu vidéo en Afrique",
+    title: "Former la prochaine génération",
+    titleAccent: "d'artistes du jeu vidéo en Afrique",
     copy: "Une formation menée par l'industrie en art du jeu vidéo, 3D, animation et développement de jeux, pensée pour relier les talents africains aux standards mondiaux du divertissement numérique.",
     cta1: "Demander un atelier",
     cta2: "Devenir partenaire",
