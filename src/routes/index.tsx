@@ -195,7 +195,7 @@ function Portfolio() {
 function Why() {
   const { t } = useLanguage();
   const icons = [Crosshair, Layers3, Globe2, Sparkles];
-  const reasons = t.why.items.map((r, i) => { const Icon = icons[i]; return { ...r, icon: <Icon className="h-7 w-7 text-primary" /> }; });
+  const reasons = t.why.items.map((r, i) => { const Icon = icons[i] ?? Sparkles; return { ...r, icon: <Icon className="h-7 w-7 text-primary" /> }; });
   return <section className="section-space border-y border-border bg-panel"><div className="container-studio"><SectionHeading kicker={t.why.kicker} title={t.why.title} /><div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">{reasons.map((reason) => <div key={reason.title} className="border-t border-primary pt-7">{reason.icon}<h3 className="mt-8 font-display text-2xl font-bold uppercase">{reason.title}</h3><p className="mt-4 text-sm leading-6 text-muted-foreground">{reason.text}</p></div>)}</div></div></section>;
 }
 
