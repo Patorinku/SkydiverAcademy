@@ -98,8 +98,7 @@ function Header() {
       <nav className="hidden items-center gap-7 md:flex" aria-label={t.nav.mainNav}>
         {links.map(([label, href]) => <a key={label} href={href} className="text-[11px] font-bold uppercase text-foreground/70 transition hover:text-primary">{label}</a>)}
       </nav>
-      <a href="#contact" className="hidden border border-primary px-5 py-3 text-[11px] font-bold uppercase text-primary transition hover:bg-primary hover:text-primary-foreground lg:inline-flex">{t.nav.cta}</a>
-      <div className="flex items-center gap-3">{toggle}<button type="button" onClick={() => setOpen(!open)} className="grid h-11 w-11 place-items-center border border-border text-foreground md:hidden" aria-label={t.nav.menu} aria-expanded={open}>{open ? <X /> : <Menu />}</button></div>
+      <div className="flex items-center gap-3"><a href="#contact" className="hidden border border-primary px-5 py-3 text-[11px] font-bold uppercase text-primary transition hover:bg-primary hover:text-primary-foreground lg:inline-flex">{t.nav.cta}</a>{toggle}<button type="button" onClick={() => setOpen(!open)} className="grid h-11 w-11 place-items-center border border-border text-foreground md:hidden" aria-label={t.nav.menu} aria-expanded={open}>{open ? <X /> : <Menu />}</button></div>
     </div>
     {open && <nav className="border-t border-border bg-ink px-4 py-6 md:hidden" aria-label={t.nav.mobileNav}>{links.map(([label, href]) => <a key={label} onClick={() => setOpen(false)} href={href} className="block border-b border-border py-4 font-display text-2xl uppercase">{label}</a>)}<a href="#contact" onClick={() => setOpen(false)} className="mt-5 flex bg-primary px-5 py-4 text-xs font-bold uppercase text-primary-foreground">{t.nav.cta}</a></nav>}
   </header>;
