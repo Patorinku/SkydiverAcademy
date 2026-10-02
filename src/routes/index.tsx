@@ -207,6 +207,11 @@ function Tools() {
   return <section id="tools" className="section-space bg-ink"><div className="container-studio"><SectionHeading kicker={t.tools.kicker} title={t.tools.title} copy={t.tools.copy} /><div className="grid grid-cols-2 gap-px border border-border bg-border sm:grid-cols-3 lg:grid-cols-5">{tools.map(([name, src]) => <div key={name} className="flex h-32 items-center justify-center bg-ink p-6 md:h-40"><img src={src} alt={`${name} logo`} loading="lazy" className="max-h-12 max-w-full object-contain opacity-85 transition hover:opacity-100 md:max-h-14" /></div>)}</div></div></section>;
 }
 
+function Network() {
+  const { t } = useLanguage();
+  return <section id="network" className="border-t border-border bg-background py-20 md:py-24"><div className="container-studio flex flex-col justify-between gap-8 lg:flex-row lg:items-center"><div className="max-w-3xl"><p className="mb-4 text-xs font-bold uppercase text-energy">{t.network.kicker}</p><h2 className="display-title text-4xl text-foreground md:text-6xl">{t.network.title}</h2><p className="mt-5 text-base leading-7 text-muted-foreground">{t.network.copy}</p></div><div className="shrink-0"><ActionLink href="#contact">{t.network.cta}</ActionLink></div></div></section>;
+}
+
 function Why() {
   const { t } = useLanguage();
   const icons = [Crosshair, Layers3, Globe2, Sparkles];
