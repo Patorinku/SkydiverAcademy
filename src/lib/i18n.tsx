@@ -98,6 +98,12 @@ const en = {
     title: "Industry-Standard Tools and Technologies",
     copy: "Our programs are designed around widely used tools and technologies across the creative industries.",
   },
+  network: {
+    kicker: "Community",
+    title: "Building an Industry Network",
+    copy: "We're building a growing network of educators, creative professionals, studios, institutions and technology partners. Interested in contributing or collaborating? Let's connect.",
+    cta: "Let's connect",
+  },
   founder: {
     kicker: "Industry leadership",
     title: "Meet the Founder",
@@ -245,6 +251,12 @@ const fr: Dict = {
     kicker: "Logiciels",
     title: "Outils et technologies standards de l'industrie",
     copy: "Nos programmes s'appuient sur des outils et technologies largement utilisés dans les industries créatives.",
+  },
+  network: {
+    kicker: "Communauté",
+    title: "Construire un réseau professionnel",
+    copy: "Nous construisons un réseau grandissant d'enseignants, de professionnels de la création, de studios, d'établissements et de partenaires technologiques. Envie de contribuer ou de collaborer ? Échangeons.",
+    cta: "Prendre contact",
   },
   founder: {
     kicker: "Leadership industriel",
