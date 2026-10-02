@@ -93,6 +93,11 @@ const en = {
       { title: "African Talent", text: "Our goal is to help talented African creators participate in the global digital entertainment industry." },
     ],
   },
+  tools: {
+    kicker: "Software",
+    title: "Industry-Standard Tools and Technologies",
+    copy: "Our programs are designed around widely used tools and technologies across the creative industries.",
+  },
   founder: {
     kicker: "Industry leadership",
     title: "Meet the Founder",
@@ -235,6 +240,11 @@ const fr: Dict = {
       { title: "Perspective internationale", text: "La formation ouvre les talents africains aux standards internationaux et aux opportunités de carrière mondiales." },
       { title: "Talents africains", text: "Notre objectif est d'aider les créateurs africains talentueux à participer à l'industrie mondiale du divertissement numérique." },
     ],
+  },
+  tools: {
+    kicker: "Logiciels",
+    title: "Outils et technologies standards de l'industrie",
+    copy: "Nos programmes s'appuient sur des outils et technologies largement utilisés dans les industries créatives.",
   },
   founder: {
     kicker: "Leadership industriel",
