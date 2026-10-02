@@ -22,6 +22,16 @@ import gameBorderlands from "../assets/Borderlands_4.jpg.asset.json";
 import gameCrossfire from "../assets/co2iie.webp.asset.json";
 import gameWalkingDead from "../assets/OTWD_Aidan_RevealArt_logos.avif.asset.json";
 import gamePayday from "../assets/payday_crimewar.webp.asset.json";
+import toolUnreal from "../assets/tool-unreal.png.asset.json";
+import toolUnity from "../assets/tool-unity.png.asset.json";
+import toolMaya from "../assets/tool-maya.png.asset.json";
+import toolMax from "../assets/tool-3dsmax.png.asset.json";
+import toolBlender from "../assets/tool-blender.png.asset.json";
+import toolZbrush from "../assets/tool-zbrush.png.asset.json";
+import toolSubstance from "../assets/tool-substance.png.asset.json";
+import toolMarvelous from "../assets/tool-marvelous.png.asset.json";
+import toolHoudini from "../assets/tool-houdini.png.asset.json";
+import toolReallusion from "../assets/tool-reallusion.png.asset.json";
 
 const shippedTitles = [
   { src: gameBorderlands.url, name: "Borderlands 4" },
@@ -191,6 +201,12 @@ function Portfolio() {
   return <section id="portfolio" className="section-space bg-background"><div className="container-studio"><div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end"><SectionHeading kicker={t.portfolio.kicker} title={t.portfolio.title} copy={t.portfolio.copy} /><div className="mb-12 md:mb-16"><ActionLink href="https://www.artstation.com/patrickbenai" secondary>{t.portfolio.cta}</ActionLink></div></div><div className="grid auto-rows-[280px] gap-2 md:grid-cols-12">{portfolio.map(([idx, image, span]) => { const label = t.portfolio.labels[idx]; return <figure key={idx} className={`image-shade group relative bg-card ${span}`}><img src={image} alt={`${label} portfolio artwork`} width={1536} height={1024} loading="lazy" className={`h-full w-full object-cover transition duration-700 group-hover:scale-105 ${idx === 0 ? "object-top" : "object-center"}`} /><figcaption className="absolute bottom-0 left-0 z-10 flex w-full items-center justify-between p-5 font-display text-xl font-bold uppercase"><span>{label}</span><ArrowDownRight className="h-5 w-5 text-primary" /></figcaption></figure>; })}</div></div></section>;
 }
 
+const tools: [string, string][] = [["Unreal Engine", toolUnreal.url], ["Unity", toolUnity.url], ["Maya", toolMaya.url], ["3ds Max", toolMax.url], ["Blender", toolBlender.url], ["ZBrush", toolZbrush.url], ["Substance by Adobe", toolSubstance.url], ["Marvelous Designer", toolMarvelous.url], ["Houdini", toolHoudini.url], ["Reallusion", toolReallusion.url]];
+function Tools() {
+  const { t } = useLanguage();
+  return <section id="tools" className="section-space bg-ink"><div className="container-studio"><SectionHeading kicker={t.tools.kicker} title={t.tools.title} copy={t.tools.copy} /><div className="grid grid-cols-2 gap-px border border-border bg-border sm:grid-cols-3 lg:grid-cols-5">{tools.map(([name, src]) => <div key={name} className="flex h-32 items-center justify-center bg-ink p-6 md:h-40"><img src={src} alt={`${name} logo`} loading="lazy" className="max-h-12 max-w-full object-contain opacity-85 transition hover:opacity-100 md:max-h-14" /></div>)}</div></div></section>;
+}
+
 function Why() {
   const { t } = useLanguage();
   const icons = [Crosshair, Layers3, Globe2, Sparkles];
@@ -243,5 +259,5 @@ function Footer() {
 }
 
 function Index() {
-  return <LanguageProvider><main><Header /><Hero /><Experience /><Programs /><Audiences /><Process /><Workshop /><Portfolio /><Why /><Founder /><ShippedGames /><Partnerships /><Contact /><Footer /></main></LanguageProvider>;
+  return <LanguageProvider><main><Header /><Hero /><Experience /><Programs /><Audiences /><Process /><Workshop /><Portfolio /><Why /><Tools /><Founder /><ShippedGames /><Partnerships /><Contact /><Footer /></main></LanguageProvider>;
 }
