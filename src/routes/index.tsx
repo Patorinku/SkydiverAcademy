@@ -87,8 +87,8 @@ function ActionLink({ href, children, secondary = false }: { href: string; child
 
 function Logo() {
   const { t } = useLanguage();
-  return <a href="#top" className="flex shrink-0 items-center gap-3" aria-label={t.nav.home}>
-    <img src={logoAsset.url} alt="Skydiver Academy logo" width={36} height={36} className="h-9 w-9 object-contain" />
+  return <a href="#top" className="flex shrink-0 items-center gap-2.5" aria-label={t.nav.home}>
+    <img src={logoAsset.url} alt="Skydiver Academy logo" width={28} height={28} className="h-7 w-auto object-contain" />
     <span className="font-display text-lg font-bold uppercase leading-none">Skydiver<span className="block text-[10px] text-primary">Academy</span></span>
   </a>;
 }
