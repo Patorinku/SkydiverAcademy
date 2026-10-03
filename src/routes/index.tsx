@@ -10,7 +10,7 @@ import characterArt from "../assets/patrick-benai-render.jpg.asset.json";
 import founderPortrait from "../assets/patrick-portrait-bw.jpg.asset.json";
 import neonCityArt from "../assets/neon-city.jpg.asset.json";
 import vehicleTactical from "../assets/vehicle-tactical.jpg.asset.json";
-import logoAsset from "../assets/logo-skydiver.jpg.asset.json";
+import logoAsset from "../assets/skydiver-logo.png.asset.json";
 import batmanArt from "../assets/batman-character.webp.asset.json";
 import unrealTemple from "../assets/unreal-temple.jpg.asset.json";
 import unrealGameEngine from "../assets/unreal-game-engine.png.asset.json";
