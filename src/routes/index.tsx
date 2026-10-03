@@ -10,7 +10,7 @@ import characterArt from "../assets/patrick-benai-render.jpg.asset.json";
 import founderPortrait from "../assets/patrick-portrait-bw.jpg.asset.json";
 import neonCityArt from "../assets/neon-city.jpg.asset.json";
 import vehicleTactical from "../assets/vehicle-tactical.jpg.asset.json";
-import logoAsset from "../assets/logo-skydiver.jpg.asset.json";
+import logoAsset from "../assets/skydiver-logo.png.asset.json";
 import batmanArt from "../assets/batman-character.webp.asset.json";
 import unrealTemple from "../assets/unreal-temple.jpg.asset.json";
 import unrealGameEngine from "../assets/unreal-game-engine.png.asset.json";
@@ -88,7 +88,7 @@ function ActionLink({ href, children, secondary = false }: { href: string; child
 function Logo() {
   const { t } = useLanguage();
   return <a href="#top" className="flex shrink-0 items-center gap-3" aria-label={t.nav.home}>
-    <img src={logoAsset.url} alt="Skydiver Academy logo" width={36} height={36} className="energy-glow h-9 w-9 rounded-[6px] object-cover" />
+    <img src={logoAsset.url} alt="Skydiver Academy logo" width={36} height={36} className="h-9 w-9 object-contain" />
     <span className="font-display text-lg font-bold uppercase leading-none">Skydiver<span className="block text-[10px] text-primary">Academy</span></span>
   </a>;
 }
