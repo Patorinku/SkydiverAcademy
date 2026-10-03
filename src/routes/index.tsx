@@ -264,5 +264,5 @@ function Footer() {
 }
 
 function Index() {
-  return <LanguageProvider><main><Header /><Hero /><Experience /><Programs /><Audiences /><Process /><Workshop /><Portfolio /><Why /><Tools /><Network /><Founder /><ShippedGames /><Partnerships /><Contact /><Footer /></main></LanguageProvider>;
+  return <LanguageProvider><main><Header /><Hero /><Experience /><Programs /><Audiences /><Process /><Workshop /><Portfolio /><Why /><Tools /><Network /><div className="bg-background"><div className="container-studio"><span className="block h-px w-16 bg-primary" /></div></div><Founder /><ShippedGames /><Partnerships /><Contact /><Footer /></main></LanguageProvider>;
 }
